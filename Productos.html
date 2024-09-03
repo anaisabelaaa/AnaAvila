@@ -1,0 +1,248 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Hoy</title>
+    <link rel="stylesheet" href="producto.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap" rel="stylesheet">
+
+      
+</head>
+<body>
+
+    <form id="form1" runat="server">
+
+<header>
+  <div class="logo-container">
+    &nbsp;&nbsp;&nbsp;&nbsp; <img src="menu/logo.jpeg" alt="Logo" />
+  </div>
+  <h1 class="rubik-spray-paint-regular">La Dulce Ciambella&nbsp; </h1>
+  <nav>
+    &nbsp;<!-- Ajusta el tamaño del logo según sea necesario -->
+    <a href="#inicio"><img src="menu/inicio.png" alt="Inicio"> Inicio </a>
+    <a href="#menu"><img src="menu/menu.png" alt="Menú"> Menú </a>
+    <a href="#sobre-nosotros"><img src="menu/contacto.png" alt="Sobre Nosotros"> Sobre Nosotros </a>
+    <a href="#contacto"><img src="menu/correo.png" alt="Contacto">Contacto</a>
+    
+   
+    <a href="#contacto"><img src="menu/pedidos.png" alt=""><br />
+      <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/detalledePedido.aspx">Detalle del pedido</asp:HyperLink>&nbsp;</a>
+    <a href="#contacto"><img src="menu/acceso.png" alt=""><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Iniciarsesion.aspx">Inicie Sesion</asp:HyperLink>&nbsp;</a>
+  </nav>
+</header>
+
+
+<h2 class="rubik-spray-paint-regular">Menú de Hoy</h2>
+
+<table class="menu" id="menu">
+    <tr>
+        <th>Plato</th>
+        <th>Descripción</th>
+        <th>Precio</th>
+        <th>Acciones</th>
+    </tr>
+    
+    <tr>
+        <td>
+            <div class="menu-item">
+                <img src="donasmenu/menu1.png" alt="Chocolate">
+                <div>
+                    <h3 class="rubik-spray-paint-regular">Chocolate</h3>
+                    <p>Una deliciosa dona cubierta de chocolate suave y cremoso, ideal para los amantes del chocolate. Perfecta para acompañar con una taza de café.</p>
+                </div>
+            </div>
+        </td>
+        <td>Dona cubierta de Chocolate.</td>
+        <td>L. 30</td>
+        <td>
+            <button class="btn-menu" onclick="agregarAlCarrito('Chocolate', 'Dona cubierta de Chocolate.', 30)">Agregar al Carrito</button>
+            <button class="btn-menu" onclick="borrarDelCarrito('Chocolate')">Borrar del Carrito</button>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <div class="menu-item">
+                <img src="donasmenu/menu2.png" alt="Chocolate y Chispas">
+                <div>
+                    <h3 class="rubik-spray-paint-regular">Chocolate y Chispas</h3>
+                    <p>Dona de chocolate esponjosa decorada con chispas de chocolate, ofreciendo una experiencia dulce y crujiente en cada bocado.</p>
+                </div>
+            </div>
+        </td>
+        <td>Dona de chocolate y chispas.</td>
+        <td>L. 30</td>
+        <td>
+            <button class="btn-menu" onclick="agregarAlCarrito('Chocolate y Chispas', 'Dona de chocolate y chispas', 30)">Agregar al Carrito</button>
+            <button class="btn-menu" onclick="borrarDelCarrito('Chocolate y Chispas')">Borrar del Carrito</button>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <div class="menu-item">
+                <img src="donasmenu/menu3.png" alt="Dona Marble">
+                <div>
+                    <h3 class="rubik-spray-paint-regular">Dona Marble</h3>
+                    <p>Dona con un diseño marmoleado de chocolate y vainilla, que combina lo mejor de ambos sabores en una sola pieza.</p>
+                </div>
+            </div>
+        </td>
+        <td>Dona de cubierta.</td>
+        <td>L. 30</td>
+        <td>
+            <button class="btn-menu" onclick="agregarAlCarrito('Dona Marble', 'Dona de cubierta', 30)">Agregar al Carrito</button>
+            <button class="btn-menu" onclick="borrarDelCarrito('Dona Marble')">Borrar del Carrito</button>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <div class="menu-item">
+                <img src="donasmenu/menu4.png" alt="Coco Tostado">
+                <div>
+                    <h3 class="rubik-spray-paint-regular">Coco Tostado</h3>
+                    <p>Dona suave cubierta con coco tostado, que le da un toque crujiente y un sabor tropical irresistible.</p>
+                </div>
+            </div>
+        </td>
+        <td>Dona de coco tostado.</td>
+        <td>L. 30</td>
+        <td>
+            <button class="btn-menu" onclick="agregarAlCarrito('Coco Tostado', 'Dona de coco tostado', 30)">Agregar al Carrito</button>
+            <button class="btn-menu" onclick="borrarDelCarrito('Coco Tostado')">Borrar del Carrito</button>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <div class="menu-item">
+                <img src="donasmenu/menu5.png" alt="Azucarada">
+                <div>
+                    <h3 class="rubik-spray-paint-regular">Azucarada</h3>
+                    <p>Dona espolvoreada con azúcar, simple pero deliciosa, perfecta para un antojo dulce en cualquier momento del día.</p>
+                </div>
+            </div>
+        </td>
+        <td>Dona azucarada.</td>
+        <td>L. 30</td>
+        <td>
+            <button class="btn-menu" onclick="agregarAlCarrito('Azucarada', 'Dona azucarada', 30)">Agregar al Carrito</button>
+            <button class="btn-menu" onclick="borrarDelCarrito('Azucarada')">Borrar del Carrito</button>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <div class="menu-item">
+                <img src="donasmenu/menu6.png" alt="Dona Maple">
+                <div>
+                    <h3 class="rubik-spray-paint-regular">Dona Maple</h3>
+                    <p>Dona cubierta de un glaseado de maple y decorada con chispas de chocolate, una combinación perfecta de sabores dulces.</p>
+                </div>
+            </div>
+        </td>
+        <td>Dona de maple cubierta de chispas de chocolate.</td>
+        <td>L. 30</td>
+        <td>
+            <button class="btn-menu" onclick="agregarAlCarrito('Dona Maple', 'Dona de maple cubierta de chispas de chocolate', 30)">Agregar al Carrito</button>
+            <button class="btn-menu" onclick="borrarDelCarrito('Dona Maple')">Borrar del Carrito</button>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <div class="menu-item">
+                <img src="donasmenu/menu7.png" alt="Cruller de Chocolate">
+                <div>
+                    <h3 class="rubik-spray-paint-regular">Cruller de Chocolate</h3>
+                    <p>Dona cruller con una cobertura de chocolate, suave y aireada, ideal para disfrutar en cualquier momento.</p>
+                </div>
+            </div>
+        </td>
+        <td>Dona cruller cubierta de chocolate.</td>
+        <td>L. 30</td>
+        <td>
+            <button class="btn-menu" onclick="agregarAlCarrito('Cruller de Chocolate', 'Dona cruller cubierta de chocolate', 30)">Agregar al Carrito</button>
+            <button class="btn-menu" onclick="borrarDelCarrito('Cruller de Chocolate')">Borrar del Carrito</button>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <div class="menu-item">
+                <img src="donasmenu/menu8.png" alt="Glaseada">
+                <div>
+                    <h3 class="rubik-spray-paint-regular">Glaseada</h3>
+                    <p>Dona glaseada con un glaseado dulce y brillante, perfecta para aquellos que buscan un dulce clásico.</p>
+                </div>
+            </div>
+        </td>
+        <td>Dona glaseada.</td>
+        <td>L. 30</td>
+        <td>
+            <button class="btn-menu" onclick="agregarAlCarrito('Glaseada', 'Dona glaseada.', 30)">Agregar al Carrito</button>
+            <button class="btn-menu" onclick="borrarDelCarrito('Glaseada')">Borrar del Carrito</button>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <div class="menu-item">
+                <img src="donasmenu/menu9.png" alt="Chocolate - Coco">
+                <div>
+                    <h3 class="rubik-spray-paint-regular">Chocolate - Coco</h3>
+                    <p>Dona de chocolate cubierta de coco rallado, una combinación deliciosa que deleitará a los amantes del chocolate y el coco.</p>
+                </div>
+            </div>
+        </td>
+        <td>Dona de chocolate y cubierta de coco.</td>
+        <td>L. 30</td>
+        <td>
+            <button class="btn-menu" onclick="agregarAlCarrito('Chocolate - Coco', 'Dona de chocolate y cubierta de coco', 30)">Agregar al Carrito</button>
+            <button class="btn-menu" onclick="borrarDelCarrito('Chocolate - Coco')">Borrar del Carrito</button>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <div class="menu-item">
+                <img src="donasmenu/menu10.png" alt="Cruller">
+                <div>
+                    <h3 class="rubik-spray-paint-regular">Cruller</h3>
+                    <p>Dona cruller, conocida por su textura ligera y aireada, ideal para disfrutar con un café o té.</p>
+                </div>
+            </div>
+        </td>
+        <td>Dona cruller.</td>
+        <td>L. 30</td>
+        <td>
+            <button class="btn-menu" onclick="agregarAlCarrito('Cruller', 'Dona cruller', 30)">Agregar al Carrito</button>
+            <button class="btn-menu" onclick="borrarDelCarrito('Cruller')">Borrar del Carrito</button>
+        </td>
+    </tr>
+</table>
+
+</body>
+<footer>
+    <p>Síguenos en nuestras redes sociales</p>
+    <p>&copy; 2024 Donas Deliciosas. Todos los derechos reservados.</p>
+</footer>
+
+<div class="custom-cursor" id="cursor"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    const cursor = document.getElementById('cursor');
+
+    document.addEventListener('mousemove', (e) => {
+        cursor.style.left = e.pageX + 'px';
+    cursor.style.top = e.pageY + 'px';
+    });
+</script>
+
+</html>

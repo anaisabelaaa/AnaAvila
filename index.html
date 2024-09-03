@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donitas</title>
+    <link rel="stylesheet" href="inicio.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <form id="form1" runat="server">
+
+<header>
+  <div class="logo-container">
+    &nbsp;&nbsp;&nbsp;&nbsp; <img src="menu/logo.jpeg" alt="Logo" />
+  </div>
+  <h1 class="rubik-spray-paint-regular">La Dulce Ciambella&nbsp; </h1>
+  <nav>
+    &nbsp;<!-- Ajusta el tamaño del logo según sea necesario -->
+    <a href="#inicio"><img src="menu/inicio.png" alt="Inicio"> Inicio </a>
+    <a href="#menu"><img src="menu/menu.png" alt="Menú"> Menú </a>
+    <a href="sobrenosotros.html"><img src="menu/contacto.png" alt="Sobre Nosotros"> Sobre Nosotros </a>
+    <a href="contacto.html"><img src="menu/correo.png" alt="Contacto">Contacto</a>
+    <a href="blog.html"><img src="menu/cursor.png" alt="Contacto">Blog de noticias</a>
+   
+   
+  </nav>
+</header>
+
+<!-- CARRUSEL -->
+<section class="hero" id="inicio">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/donaA.png" class="d-block w-100" alt="Dona 1">
+            </div>
+            <div class="carousel-item">
+                <img src="img/donaB.jpg" class="d-block w-100" alt="Dona 2">
+            </div>
+            <div class="carousel-item">
+                <img src="img/donaC.jpg" class="d-block w-100" alt="Dona 3">
+            </div>
+            <div class="carousel-item">
+                <img src="img/donaD.jpg" class="d-block w-100" alt="Dona 4">
+            </div>
+            <div class="carousel-item">
+                <img src="img/donaE.png" class="d-block w-100" alt="Dona 5">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <h1 class="rubik-spray-paint-regular">¡Las mejores donas de la ciudad!</h1>
+    <p style="color: #ff71a5">Hechas con amor y los mejores ingredientes.</p>
+    <a href="#menu" style="background-color: #ffc0cb; padding: 10px 20px; text-decoration: none; color: #333; border-radius: 5px;">Ver Menú</a>
+
+</section>
+
+ <!-- Menu -->
+<h2 class="rubik-spray-paint-regular">Menú de Hoy</h2>
+
+<section class="menu" id="menu">
+    <div class="menu-item">
+        <img src="donasmenu/menu1.png" alt="Nombre del Plato 1" style="width:100%; border-radius: 5px;">
+        <h3 class="rubik-spray-paint-regular">Chocolate</h3>
+        <p>Dona cubierta de Chocolate.</p>
+        <p>Precio: L. 30</p>
+        <button class="btn-menu" onclick="agregarAlCarrito('Nombre del Plato 1', 'Descripción del Plato 1', 100)">Agregar al Carrito</button>
+        <button class="btn-menu" onclick="borrarDelCarrito('Nombre del Plato 1')">Borrar del Carrito</button>
+    </div>
+
+    <div class="menu-item">
+        <img src="donasmenu/menu2.png" alt="Nombre del Plato 1" style="width:100%; border-radius: 5px;">
+        <h3 class="rubik-spray-paint-regular">Chocolate y Chispas</h3>
+        <p>Dona de chocolate y chispas</p>
+        <p>Precio: L. 30</p>
+        <button class="btn-menu" onclick="agregarAlCarrito('Nombre del Plato 1', 'Descripción del Plato 1', 100)">Agregar al Carrito</button>
+        <button class="btn-menu" onclick="borrarDelCarrito('Nombre del Plato 1')">Borrar del Carrito</button>
+    </div>
+    <div class="menu-item">
+        <img src="donasmenu/menu3.png" alt="Nombre del Plato 1" style="width:100%; border-radius: 5px;">
+        <h3 class="rubik-spray-paint-regular">Dona Marble</h3>
+        <p>Dona de cubierta</p>
+        <p>Precio: L. 30</p>
+        <button class="btn-menu" onclick="agregarAlCarrito('Nombre del Plato 1', 'Descripción del Plato 1', 100)">Agregar al Carrito</button>
+        <button class="btn-menu" onclick="borrarDelCarrito('Nombre del Plato 1')">Borrar del Carrito</button>
+    </div>
+    <div class="menu-item">
+        <img src="donasmenu/menu4.png" alt="Nombre del Plato 1" style="width:100%; border-radius: 5px;">
+        <h3 class="rubik-spray-paint-regular">Coco Tostado</h3>
+        <p>Dona de coco tostado</p>
+        <p>Precio: L. 30</p>
+        <button class="btn-menu" onclick="agregarAlCarrito('Nombre del Plato 1', 'Descripción del Plato 1', 100)">Agregar al Carrito</button>
+        <button class="btn-menu" onclick="borrarDelCarrito('Nombre del Plato 1')">Borrar del Carrito</button>
+    </div>
+    <div class="menu-item">
+        <img src="donasmenu/menu5.png" alt="Nombre del Plato 1" style="width:100%; border-radius: 5px;">
+        <h3 class="rubik-spray-paint-regular">Azucarada</h3>
+        <p>Dona azucarada</p>
+        <p>Precio: L. 30</p>
+        <button class="btn-menu" onclick="agregarAlCarrito('Nombre del Plato 1', 'Descripción del Plato 1', 100)">Agregar al Carrito</button>
+        <button class="btn-menu" onclick="borrarDelCarrito('Nombre del Plato 1')">Borrar del Carrito</button>
+    </div>
+    <div class="menu-item">
+        <img src="donasmenu/menu6.png" alt="Nombre del Plato 1" style="width:100%; border-radius: 5px;">
+        <h3 class="rubik-spray-paint-regular">Dona Maple</h3>
+        <p>Dona de maple cubierta de chispas de chocolate</p>
+        <p>Precio: L. 30</p>
+        <button class="btn-menu" onclick="agregarAlCarrito('Nombre del Plato 1', 'Descripción del Plato 1', 100)">Agregar al Carrito</button>
+        <button class="btn-menu" onclick="borrarDelCarrito('Nombre del Plato 1')">Borrar del Carrito</button>
+    </div>
+    <div class="menu-item">
+        <img src="donasmenu/menu7.png" alt="Nombre del Plato 1" style="width:100%; border-radius: 5px;">
+        <h3 class="rubik-spray-paint-regular">Cruller de Chocolate</h3>
+        <p>Dona cruller cubierta de chocolate</p>
+        <p>Precio: L. 30</p>
+        <button class="btn-menu" onclick="agregarAlCarrito('Nombre del Plato 1', 'Descripción del Plato 1', 100)">Agregar al Carrito</button>
+        <button class="btn-menu" onclick="borrarDelCarrito('Nombre del Plato 1')">Borrar del Carrito</button>
+    </div>
+    <div class="menu-item">
+        <img src="donasmenu/menu8.png" alt="Nombre del Plato 1" style="width:100%; border-radius: 5px;">
+        <h3 class="rubik-spray-paint-regular">Glaseada</h3>
+        <p>Dona glaseada.</p>
+        <p>Precio: L. 30</p>
+        <button class="btn-menu" onclick="agregarAlCarrito('Nombre del Plato 1', 'Descripción del Plato 1', 100)">Agregar al Carrito</button>
+        <button class="btn-menu" onclick="borrarDelCarrito('Nombre del Plato 1')">Borrar del Carrito</button>
+    </div>
+    <div class="menu-item">
+        <img src="donasmenu/menu9.png" alt="Nombre del Plato 1" style="width:100%; border-radius: 5px;">
+        <h3 class="rubik-spray-paint-regular">Chocolate - Coco</h3>
+        <p>Dona de chocolate y cubierta de coco</p>
+        <p>Precio: L. 30</p>
+        <button class="btn-menu" onclick="agregarAlCarrito('Nombre del Plato 1', 'Descripción del Plato 1', 100)">Agregar al Carrito</button>
+        <button class="btn-menu" onclick="borrarDelCarrito('Nombre del Plato 1')">Borrar del Carrito</button>
+    </div>
+    <div class="menu-item">
+        <img src="donasmenu/menu10.png" alt="Nombre del Plato 1" style="width:100%; border-radius: 5px;">
+        <h3 class="rubik-spray-paint-regular">Cruller</h3>
+        <p>Dona cruller</p>
+        <p>Precio: L. 30</p>
+        <button class="btn-menu" onclick="agregarAlCarrito('Nombre del Plato 1', 'Descripción del Plato 1', 100)">Agregar al Carrito</button>
+        <button class="btn-menu" onclick="borrarDelCarrito('Nombre del Plato 1')">Borrar del Carrito</button>
+    </div>
+
+    <!-- Agrega más elementos del menú aquí -->
+</section>
+
+<script>
+    function agregarAlCarrito(nombre, descripcion, precio) {
+        // Lógica para agregar el elemento al carrito
+        console.log(`Agregado al carrito: ${nombre}, ${descripcion}, L. ${precio}`);
+        alert(`Agregado al carrito: ${nombre}`);
+    }
+
+    function borrarDelCarrito(nombre) {
+        // Lógica para borrar el elemento del carrito
+        console.log(`Borrado del carrito: ${nombre}`);
+        alert(`Borrado del carrito: ${nombre}`);
+    }
+</script>
+   <asp:SqlDataSource 
+    ID="SqlDataSource1" 
+    runat="server" 
+    ConnectionString="<%$ ConnectionStrings:baselConnectionString %>" 
+    ProviderName="<%$ ConnectionStrings:baselConnectionString.ProviderName %>"
+    SelectCommand="SELECT * FROM Productos">
+</asp:SqlDataSource>
+
+    <div id="resultado">
+                <asp:Label ID="lblTotal" runat="server" Text="Total en el carrito: L. 0"></asp:Label>
+                <br />
+            </div>
+        </section>
+
+<section id="sobre-nosotros">
+    <h2 class="rubik-spray-paint-regular">Sobre Nosotros</h2>
+    <p>En Donas Deliciosas, nos apasiona crear las mejores donas para nuestros clientes. Usamos ingredientes frescos y recetas tradicionales.</p>
+</section>
+
+
+<footer>
+    <p>Síguenos en nuestras redes sociales</p>
+   <a href="axp/La Dulce Ciambella.pdf" class="styled-link">Documentacion</a>
+<a href="axp/Manual-de-Usuario.pdf" class="styled-link">Manual Cliente</a>
+    <p>&copy; 2024 Donas Deliciosas. Todos los derechos reservados.</p>
+</footer>
+
+<div class="custom-cursor" id="cursor"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    const cursor = document.getElementById('cursor');
+
+    document.addEventListener('mousemove', (e) => {
+        cursor.style.left = e.pageX + 'px';
+    cursor.style.top = e.pageY + 'px';
+    });
+</script>
+
+    </form>
+
+</body>
+</html>

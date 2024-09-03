@@ -1,0 +1,164 @@
+
+.rubik-spray-paint-regular {
+    font-family: "Rubik Spray Paint", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: #5d0023;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff1f6;
+    color: #333;
+    cursor: none; /* Oculta el cursor predeterminado */
+}
+.custom-cursor {
+    position: absolute;
+    width: 50px; /* Ajusta el tamaño del cursor */
+    height: 50px; /* Ajusta el tamaño del cursor */
+    background-image: url('menu/cursor.png'); /* Cambia 'img/cursor.png' por la ruta de tu imagen de cursor */
+    background-size: cover;
+    pointer-events: none; /* Permite que los eventos del mouse pasen a través del cursor personalizado */
+    transition: transform 0.1s ease; /* Suaviza el movimiento */
+}
+header {
+    background-color: #ffc0cb;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #e2187a;
+ 
+}
+nav img {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+}
+.hero {
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+.hero h1 {
+    font-size: 3em;
+    color: #ff5593;
+}
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+.menu-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+}
+footer {
+    background-color: #ffc0cb;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.carousel-item img {
+    height: 400px; /* Ajusta la altura de las imágenes del carrusel */
+    object-fit: cover; /* Asegura que la imagen cubra el área */
+}
+
+  .menu-item img {
+width: 100%; 
+height: auto;
+object-fit: cover; 
+margin-bottom: 10px; 
+}
+
+.menu-item {
+display: flex;
+flex-direction: column;
+justify-content: space-between; 
+align-items: center;
+text-align: center;
+}
+
+.menu-item button {
+width: 100%;
+padding: 10px;
+background-color: #ee3875; /* Ajusta según tu diseño */
+border: none;
+color: white;
+border-radius: 5px;
+cursor: pointer;
+}
+.menu-item button:hover {
+background-color: #fc9abf; 
+}
+
+.logo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.logo-container {
+  float: left;
+  margin-right: 20px;
+}
+
+.logo-container img {
+  width: 121px;
+  height: 112px;
+}
+.btn-menu {
+width: 100%; /* Asegura que el botón ocupe todo el ancho disponible */
+padding: 10px; /* Espaciado interno */
+background-color: #ff79b2; /* Rosa suave para el fondo */
+border: none; /* Sin borde */
+color: white; /* Color del texto */
+border-radius: 5px; /* Bordes redondeados */
+cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+font-weight: bold; /* Texto en negrita */
+transition: background-color 0.3s; /* Transición suave */
+margin-top: 5px; /* Espacio entre botones */
+}
+
+.btn-menu:hover {
+background-color: #ff3b5c; /* Rosa más intenso al pasar el mouse */
+}
+.styled-link {
+    display: inline-block; /* Hace que el enlace se comporte como un bloque en línea */
+    padding: 10px 15px; /* Espaciado interno */
+    margin: 5px; /* Margen alrededor del enlace */
+    background-color: #ff79b2; /* Color de fondo verde */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+}
+
+.styled-link:hover {
+    background-color: #e73380; /* Color de fondo más oscuro al pasar el mouse */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño del enlace */
+}
+
+.styled-link:active {
+    transform: scale(0.95); /* Reduce ligeramente el tamaño al hacer clic */
+}

@@ -1,0 +1,87 @@
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('img/donaF.jpg'); /* Cambia 'img/donaF.jpg' por la ruta de tu imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            color: #333;
+        }
+        .custom-cursor {
+            position: absolute;
+            width: 50px; /* Ajusta el tamaño del cursor */
+            height: 50px; /* Ajusta el tamaño del cursor */
+            background-image: url('menu/cursor.png'); /* Cambia 'img/cursor.png' por la ruta de tu imagen de cursor */
+            background-size: cover;
+            pointer-events: none; /* Permite que los eventos del mouse pasen a través del cursor personalizado */
+            transition: transform 0.1s ease; /* Suaviza el movimiento */
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Ocupa toda la altura de la ventana */
+            backdrop-filter: blur(5px); /* Efecto de desenfoque en el fondo */
+        }
+        .contact-form {
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px; /* Ancho máximo del formulario */
+        }
+        h2 {
+            text-align: center;
+            color: #ff5593;
+        }
+        .form-control {
+            margin-bottom: 15px; /* Espaciado entre los campos */
+        }
+        .btn-submit {
+            background-color: #ff5593;
+            border: none;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%; /* Botón ocupa todo el ancho */
+        }
+        .btn-submit:hover {
+            background-color: #e2187a;
+        }
+         .styled-link {
+        display: inline-block; /* Permite aplicar padding y margin */
+        padding: 10px 20px; /* Espaciado interno */
+        background-color: #ff5593; /* Color de fondo */
+        color: white; /* Color del texto */
+        text-decoration: none; /* Sin subrayado */
+        border-radius: 5px; /* Bordes redondeados */
+        font-weight: bold; /* Texto en negrita */
+        transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    }
+
+    .styled-link:hover {
+        background-color: #e2187a; /* Color de fondo al pasar el mouse */
+        transform: translateY(-2px); /* Efecto de elevación */
+    }
+
+    .styled-link:active {
+        transform: translateY(0); /* Efecto de presión */
+    }
+    .animated-image {
+        width: 100px; /* Ajusta el tamaño según sea necesario */
+        position: relative; /* Necesario para aplicar el movimiento */
+        animation: move 1s infinite alternate; /* Aplica la animación */
+        margin-top: 20px; /* Espacio superior para separar la imagen del formulario */
+    }
+
+    @keyframes move {
+        0% {
+            transform: translateY(0); /* Posición inicial */
+        }
+        100% {
+            transform: translateY(-15px); /* Movimiento hacia arriba */
+        }
+    }

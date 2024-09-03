@@ -1,0 +1,113 @@
+
+        .rubik-spray-paint-regular {
+            font-family: "Rubik Spray Paint", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            text-align: center;
+            color: #5d0023;
+        }
+
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff1f6;
+            color: #333;
+            cursor: none; /* Oculta el cursor predeterminado */
+        }
+        .custom-cursor {
+            position: absolute;
+            width: 50px; /* Ajusta el tamaño del cursor */
+            height: 50px; /* Ajusta el tamaño del cursor */
+            background-image: url('menu/cursor.png'); /* Cambia 'img/cursor.png' por la ruta de tu imagen de cursor */
+            background-size: cover;
+            pointer-events: none; /* Permite que los eventos del mouse pasen a través del cursor personalizado */
+            transition: transform 0.1s ease; /* Suaviza el movimiento */
+        }
+            header {
+        background-color: #ffc0cb;
+        padding: 20px;
+        text-align: center;
+    }
+    nav {
+        margin: 20px 0;
+        display: flex;
+        justify-content: center;
+    }
+    nav a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #e2187a;
+     
+    }
+    nav img {
+        width: 50px;
+        height: 50px;
+        vertical-align: middle;
+    }
+    .hero {
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .hero h1 {
+        font-size: 3em;
+        color: #ff5593;
+    }
+            .logo-container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 20px;
+        }
+        .logo-container {
+          float: left;
+          margin-right: 20px;
+        }
+
+        .logo-container img {
+          width: 121px;
+          height: 112px;
+        }
+            h2 {
+            text-align: center;
+            color: #fff;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 15px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .menu-item {
+            display: flex;
+            align-items: center;
+        }
+        .menu-item img {
+            width: 100px;
+            border-radius: 5px;
+            margin-right: 15px;
+        }
+        .btn-menu {
+            margin-top: 5px;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn-menu:hover {
+            background-color: #218838;
+        }
